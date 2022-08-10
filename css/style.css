@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*RESETANDO MEU CSS PARA TODOS OS NAVEGADORES*/
+/*RESETANDO O CSS PARA TODOS OS NAVEGADORES*/
 * {
     padding: 0;
     margin: 0;
@@ -15,47 +15,46 @@ body{
 /*NAVBAR*/
 .navbar{
     display: flex;
-    flex-flow: row- wrap;
-    background: cadetblue;
+    flex-flow: row wrap;
+    /* background: cadetblue; */
     height: 100px;
-    /*justify-content: center;*/
+    justify-content: center;
     align-items: center;
 }
 
 .logo{
-    flex: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     margin-left: 10%;
 }
 
 .logo h1{
     font-family: 'Lobster', cursive;
-    color: #180F4A;
+    color: #263339;
     font-size: 34px;
 }
 
 .menu{
-    flex: 80%;
-    border: 1px solid green;
+    flex: 70%;
+    /* border: 1px solid green; */
     text-align: right;
     padding: 20px;
 }
 
 .menu a{
-    color: #180F4A;
+    color: #263339;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 20px;
+    padding: 20px 15px;
 }
 
 .menu a:hover{
     color: #FF2978;
-    border-top: 4px solid #180F4A;
+    border-top: 4px solid #263339;
 }
 
 #botao{
-    background: #180F4A;
+    background: #263339;
     color: white;
     border-radius: 5px;
     padding: 10px 25px;
@@ -66,4 +65,44 @@ body{
 #botao:hover{
     border: none;
     background: #FF2978;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+    /* justify-content: center; */
+    align-items: center;
+    
+    
+}
+
+.headline{ /*== 50% de width*/
+    flex: 40%;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+
+.headline h2{
+    font-weight:900;
+    font-size: 20px;
+    color: #263339;
+}
+
+.headline p{
+    color: grey;
+    text-align: left;
+}
+
+.contatic-btn{
+    background: #FF2978;
+    padding: 20px;
+    color: white;
+}
+
+.img-headline{ /*== 50% de width*/
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid pink; */
+    text-align: center;
 }
