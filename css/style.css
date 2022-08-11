@@ -14,17 +14,18 @@ body{
 
 /*NAVBAR*/
 .navbar{
+    background: white;
     display: flex;
-    flex-flow: row wrap;
-    /* background: cadetblue; */
+    flex-direction: row wrap;
     height: 100px;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .logo{
     /* border: 1px solid red; */
-    text-align: center;
     margin-left: 10%;
 }
 
@@ -33,6 +34,8 @@ body{
     color: #263339;
     font-size: 34px;
 }
+
+.logo h1:hover{cursor: pointer;}
 
 .menu{
     flex: 70%;
@@ -67,20 +70,20 @@ body{
     background: #FF2978;
 }
 
+
+/*HEADER*/
 .header{
     display: flex;
     flex-flow: row wrap;
-    background: white;
-    /* justify-content: center; */
     align-items: center;
-    
-    
+    /* background: rgb(237, 207, 207); */
+    padding-top: 100px;
 }
 
 .headline{ /*== 50% de width*/
     flex: 40%;
     margin-left: 10%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .headline h2{
@@ -90,19 +93,116 @@ body{
 }
 
 .headline p{
-    color: grey;
+    color: gray;
     text-align: left;
+    margin: 16px 0;
 }
 
 .contatic-btn{
+    display: inline-block;
     background: #FF2978;
     padding: 20px;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
+.contatic-btn:hover{
+    background: #263339;
+}
+
+
 .img-headline{ /*== 50% de width*/
-    margin-right: 10%;
     flex: 40%;
-    /* border: 1px solid pink; */
+    margin-right: 10%;
+    /* border: 1px solid rgb(255, 1, 43); */
     text-align: center;
+}
+
+/*SECTION*/
+section{
+    display: inline-block;
+    margin: 80px 5% 0px 5%;
+    width: 90%;
+    /* border: 1px solid black; */
+    padding: 5%;
+    text-align: center;
+}
+
+section h2{
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #263339;
+}
+
+.services{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card h3{
+    margin: 18px 0px;
+}
+
+.card:hover{
+    background: #FF2978;
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .text-ocult{
+    display: block;
+}
+
+.text-ocult{
+    display: none;
+}
+
+
+/*FOOTER*/
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(100deg, #180F4A, #090422, black);
+    text-align: center;
+    border-top: 5px solid #FF2978;
+}
+
+.logo-rodape{
+    padding: 100px;
+    /* border: 1px solid white; */
+}
+
+.agencia{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 34px;
+}
+
+#whats{
+    width: 80px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
